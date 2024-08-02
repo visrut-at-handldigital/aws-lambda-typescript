@@ -1,0 +1,14 @@
+npm init -y
+npm i -D @types/node typescript tsx glob
+pnpm i
+pnpm tsc --init
+pnpm i -D @types/aws-lambda serverless serverless-offline @serverless/typescript
+
+> Serverless now includes ESBuild and supports Typescript out-of-the-box. But this conflicts with the plugin 'serverless-esbuild'.
+You can either remove this plugin and try Serverless's ESBuild support builtin, or you can set 'build.esbuild' to false in your 'serverless.yml'.
+
+# you need aws credentials to run below command
+pnpm serverless invoke local -f hello -s dev
+
+# use below command
+pnpm serverless offline start

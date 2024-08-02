@@ -1,0 +1,23 @@
+{
+  "name": "aws-lambda-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "glob -c \"node --import tsx --test\" \"./src/**/*.test.ts\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@serverless/typescript": "^3.38.0",
+    "@types/aws-lambda": "^8.10.142",
+    "@types/node": "^22.1.0",
+    "glob": "^11.0.0",
+    "serverless": "^4.1.19",
+    "serverless-esbuild": "^1.52.1",
+    "serverless-offline": "^14.0.0",
+    "tsx": "^4.16.5",
+    "typescript": "^5.5.4"
+  }
+}
