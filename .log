@@ -10,7 +10,8 @@ You can either remove this plugin and try Serverless's ESBuild support builtin, 
 # you need aws credentials to run below command
 pnpm serverless invoke local -f hello -s dev
 
-# use below command
+# use below commands, both of them will work
 pnpm serverless offline start
+pnpm serverless offline
 
 pnpm test
