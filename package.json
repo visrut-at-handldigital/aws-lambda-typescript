@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "glob -c \"node --import tsx --test\" \"./src/**/*.test.ts\""
+    "test": "glob -c \"node --import tsx --test\" \"./src/**/*.test.[jt]s\""
   },
   "keywords": [],
   "author": "",

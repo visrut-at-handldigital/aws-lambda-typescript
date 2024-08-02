@@ -19,6 +19,17 @@ const serverlessConfiguration: AWS = {
         },
       ],
     },
+    helloFromJS: {
+      handler: "./src/hello-from.handler",
+      events: [
+        {
+          httpApi: {
+            path: "/hello-from-js",
+            method: "GET",
+          },
+        },
+      ],
+    },
   },
 };
 

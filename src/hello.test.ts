@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert";
 import { handler as helloLambda } from "./hello";
 
-import { APIGatewayProxyEventV2, Callback, Context } from "aws-lambda";
+import type { APIGatewayProxyEventV2, Callback, Context } from "aws-lambda";
 
 test("it should return message as 'Hello'", async () => {
   const testEvent = {} as APIGatewayProxyEventV2;
