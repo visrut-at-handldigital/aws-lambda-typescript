@@ -12,3 +12,5 @@ pnpm serverless invoke local -f hello -s dev
 
 # use below command
 pnpm serverless offline start
+
+pnpm test
